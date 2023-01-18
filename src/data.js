@@ -62,7 +62,7 @@
     {
       uri: "https://cdn.pixabay.com/photo/2019/03/25/22/52/poodle-4081526__480.jpg",
       name: "박세인",
-      introduction: "우니",
+      introduction: "배고파",
     },
     {
       uri: "https://cdn.pixabay.com/photo/2018/09/29/23/09/watermelon-3712515__480.jpg",
