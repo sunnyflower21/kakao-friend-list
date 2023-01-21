@@ -26,6 +26,7 @@ export default function App() {
         uri={item.uri}
         name={item.name}
         introduction={item.introduction}
+        music={item.music}
         isMe={false}
       />
     </View>
@@ -57,23 +58,14 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container} edges={["top", "right", "left"]}>
         <FlatList
-          //들어갈 데이터
           data={isOpened ? friendProfiles : []}
-          //컨테이너 스타일
           contentContainerStyle={{ paddingHorizontal: 15 }}
-          //인덱스 넣어주면 됨 . _(언더바) 쓰면 보통 안쓴다는 거
           keyExtractor={(_, index) => index}
-          // 헤더 안움직이게 하고싶을때 인덱스 넣어줌 . 배열 지금은 헤더가 하나라 0
           stickyHeaderIndices={[0]}
-          //아이템 분리선
           ItemSeparatorComponent={ItemSeparatorComponent}
-          //어케 된더헐 지
           renderItem={renderItem}
-          //리스트 위에
           ListHeaderComponent={ListHeaderComponent}
-          //리스트 아래
           ListFooterComponent={ListFooterComponent}
-          //인디테이터
           showsVerticalScrollIndicator={false}
         />
         <TabBar
